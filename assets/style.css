@@ -208,6 +208,15 @@ body {
     text-decoration: none;
 }
 
+@media (min-width: 1200px) {
+    .ribbon-title {
+        margin-left: -52px;
+    }
+    .ribbon-container {
+        overflow-x: visible;
+    }
+}
+
 .ribbon-divider {
     color: #cccccc;
     font-size: 16px;
@@ -216,9 +225,9 @@ body {
 .ribbon-links {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-grow: 1;
-    gap: 20px;
+    gap: 40px;
 }
 
 .ribbon-links a {
@@ -334,7 +343,7 @@ body {
     top: 4px;
     width: 20px;
     height: 20px;
-    background-image: url('bullet.png');
+    background-image: url('BULLET.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

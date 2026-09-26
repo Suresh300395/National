@@ -73,19 +73,14 @@
     <!-- Navigation Ribbon -->
     <div id="programs" class="nav-ribbon">
         <div class="ribbon-container">
-            <a href="#" class="ribbon-title">Programs Offered</a>
+            <span class="ribbon-title">Programs Offered</span>
             <span class="ribbon-divider">|</span>
             <nav class="ribbon-links">
-                <a href="#" class="tab-link active" data-target="btech-programs">B.Tech</a>
-                <a href="#" class="tab-link" data-target="bba-programs">BBA</a>
-                <a href="#" class="tab-link" data-target="bsc-programs">B.Sc</a>
-                <a href="#" class="tab-link" data-target="bca-programs">BCA</a>
+                <a href="#" class="tab-link active" data-target="engineering-programs">Engineering</a>
+                <a href="#" class="tab-link" data-target="management-programs">Management</a>
+                <a href="#" class="tab-link" data-target="sciences-programs">Sciences</a>
                 <a href="#" class="tab-link" data-target="pharmacy-programs">Pharmacy</a>
-                <a href="#" class="tab-link" data-target="mtech-programs">M.Tech</a>
-                <a href="#" class="tab-link" data-target="mba-programs">MBA</a>
-                <a href="#" class="tab-link" data-target="mca-programs">MCA</a>
-                <a href="#" class="tab-link" data-target="msc-programs">M.Sc</a>
-                <a href="#" class="tab-link" data-target="phd-programs">Ph.D</a>
+                <a href="#" class="tab-link" data-target="doctoral-programs">Doctoral</a>
             </nav>
         </div>
     </div>
@@ -563,97 +558,132 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const programsData = {
-            "btech-programs": {
-                title: "B.Tech Programs",
-                list: [
-                    "B.Tech. - Agricultural Engineering",
-                    "B.Tech. - Civil Engineering",
-                    "B.Tech. - Computer Science and Engineering",
-                    "B.Tech. - Artificial Intelligence & Machine Learning",
-                    "B.Tech. - Computer Science and Engineering (Data Science)",
-                    "B.Tech. - Electronics and Communication Engineering",
-                    "B.Tech. - Electrical and Electronics Engineering",
-                    "B.Tech. - Mechanical Engineering",
-                    "B.Tech. - Mining Engineering",
-                    "B.Tech. - Petroleum Technology",
-                    "B.Tech. - Computer Science and Engineering in Association with <strong>SAP</strong>",
-                    "B.Tech. - Computer Science and Engineering in Association with <strong>Google Cloud</strong>",
-                    "B.Tech. - Artificial Intelligence & Machine Learning in Association with <strong>Microsoft</strong>",
-                    "B.Tech. - Artificial Intelligence & Machine Learning in Association with <strong>Google</strong>",
-                    "B.Tech. - Computer Science and Engineering (Data Science) in Association with <strong>Google Cloud</strong>"
+            "engineering-programs": {
+                title: "Engineering Programs",
+                groups: [
+                    {
+                        title: "B.Tech Programs",
+                        list: [
+                            "B.Tech. - Agricultural Engineering",
+                            "B.Tech. - Civil Engineering",
+                            "B.Tech. - Computer Science and Engineering",
+                            "B.Tech. - Artificial Intelligence & Machine Learning",
+                            "B.Tech. - Computer Science and Engineering (Data Science)",
+                            "B.Tech. - Electronics and Communication Engineering",
+                            "B.Tech. - Electrical and Electronics Engineering",
+                            "B.Tech. - Mechanical Engineering",
+                            "B.Tech. - Mining Engineering",
+                            "B.Tech. - Petroleum Technology",
+                            "B.Tech. - Computer Science and Engineering in Association with <strong>SAP</strong>",
+                            "B.Tech. - Computer Science and Engineering in Association with <strong>Google Cloud</strong>",
+                            "B.Tech. - Artificial Intelligence & Machine Learning in Association with <strong>Microsoft</strong>",
+                            "B.Tech. - Artificial Intelligence & Machine Learning in Association with <strong>Google</strong>",
+                            "B.Tech. - Computer Science and Engineering (Data Science) in Association with <strong>Google Cloud</strong>"
+                        ]
+                    },
+                    {
+                        title: "M.Tech Programs",
+                        list: [
+                            "M.Tech. in Structural Engineering",
+                            "M.Tech. in Power Electronics and Drives",
+                            "M.Tech. in Energy Science & Technology",
+                            "M.Tech. in VLSI Design",
+                            "M.Tech. in Computer Science & Engineering",
+                            "M.Tech. in CSE (AI & ML)",
+                            "M.Tech. in Artificial Intelligence & Data Science"
+                        ]
+                    },
+                    {
+                        title: "BCA Programs",
+                        list: [
+                            "Bachelor of Computer Applications"
+                        ]
+                    },
+                    {
+                        title: "MCA Programs",
+                        list: [
+                            "Master of Computer Applications"
+                        ]
+                    },
+                    {
+                        title: "M.Sc Programs",
+                        list: [
+                            "M.Sc - Real Estate Valuation (School of Engineering)"
+                        ]
+                    }
                 ]
             },
-            "bba-programs": {
-                title: "BBA Programs",
-                list: [
-                    "Bachelor of Business Administration in knowledge partnership with <strong>Deloitte</strong>",
-                    "Bachelor of Business Administration (Business Analytics) in knowledge partnership with <strong>KPMG</strong>",
-                    "Bachelor of Business Administration (Global Finance) in knowledge partnership with <strong>PWC</strong>",
-                    "Bachelor of Business Administration (FinTech) in knowledge partnership with <strong>EY India</strong>",
-                    "Bachelor of Business Administration (Health Care Management) in knowledge partnership with <strong>RedVersity</strong>"
+            "management-programs": {
+                title: "Management Programs",
+                groups: [
+                    {
+                        title: "BBA Programs",
+                        list: [
+                            "Bachelor of Business Administration in knowledge partnership with <strong>Deloitte</strong>",
+                            "Bachelor of Business Administration (Business Analytics) in knowledge partnership with <strong>KPMG</strong>",
+                            "Bachelor of Business Administration (Global Finance) in knowledge partnership with <strong>PWC</strong>",
+                            "Bachelor of Business Administration (FinTech) in knowledge partnership with <strong>EY India</strong>",
+                            "Bachelor of Business Administration (Health Care Management) in knowledge partnership with <strong>RedVersity</strong>"
+                        ]
+                    },
+                    {
+                        title: "MBA Programs",
+                        list: [
+                            "Master of Business Administration in knowledge partnership with <strong>Deloitte</strong>",
+                            "Master of Business Administration (Business Analytics) in knowledge partnership with <strong>KPMG</strong>",
+                            "Master of Business Administration (Global Finance) in knowledge partnership with <strong>PWC</strong>",
+                            "Master of Business Administration (FinTech) in knowledge partnership with <strong>EY India</strong>",
+                            "Master of Business Administration (Health Care Management) in knowledge partnership with <strong>RedVersity</strong>",
+                            "Master of Business Administration (For Working Professionals)"
+                        ]
+                    }
                 ]
             },
-            "bsc-programs": {
-                title: "B.Sc Programs",
-                list: [
-                    "B.Sc - Forensic Science",
-                    "B.Sc - Cyber Security & Digital Forensics"
-                ]
-            },
-            "bca-programs": {
-                title: "BCA Programs",
-                list: [
-                    "Bachelor of Computer Applications"
+            "sciences-programs": {
+                title: "Sciences Programs",
+                groups: [
+                    {
+                        title: "B.Sc Programs",
+                        list: [
+                            "B.Sc - Forensic Science",
+                            "B.Sc - Cyber Security & Digital Forensics"
+                        ]
+                    },
+                    {
+                        title: "M.Sc Programs",
+                        list: [
+                            "M.Sc - Forensic Science (School of Sciences)",
+                            "M.Sc - Cyber Security & Digital Forensics (School of Sciences)"
+                        ]
+                    }
                 ]
             },
             "pharmacy-programs": {
                 title: "Pharmacy Programs",
-                list: [
-                    "B.Pharmacy",
-                    "Pharma-D",
-                    "M.Pharmacy - Pharmaceutics",
-                    "M.Pharmacy - Pharmaceutical Analysis"
+                groups: [
+                    {
+                        title: "UG Programs",
+                        list: [
+                            "B.Pharmacy"
+                        ]
+                    },
+                    {
+                        title: "PG Programs",
+                        list: [
+                            "M.Pharmacy - Pharmaceutics",
+                            "M.Pharmacy - Pharmaceutical Analysis"
+                        ]
+                    },
+                    {
+                        title: "Doctoral Programs",
+                        list: [
+                            "Pharma-D"
+                        ]
+                    }
                 ]
             },
-            "mtech-programs": {
-                title: "M.Tech Programs",
-                list: [
-                    "M.Tech. in Structural Engineering",
-                    "M.Tech. in Power Electronics and Drives",
-                    "M.Tech. in Energy Science & Technology",
-                    "M.Tech. in VLSI Design",
-                    "M.Tech. in Computer Science & Engineering",
-                    "M.Tech. in CSE (AI & ML)",
-                    "M.Tech. in Artificial Intelligence & Data Science"
-                ]
-            },
-            "mba-programs": {
-                title: "MBA Programs",
-                list: [
-                    "Master of Business Administration in knowledge partnership with <strong>Deloitte</strong>",
-                    "Master of Business Administration (Business Analytics) in knowledge partnership with <strong>KPMG</strong>",
-                    "Master of Business Administration (Global Finance) in knowledge partnership with <strong>PWC</strong>",
-                    "Master of Business Administration (FinTech) in knowledge partnership with <strong>EY India</strong>",
-                    "Master of Business Administration (Health Care Management) in knowledge partnership with <strong>RedVersity</strong>",
-                    "Master of Business Administration (For Working Professionals)"
-                ]
-            },
-            "mca-programs": {
-                title: "MCA Programs",
-                list: [
-                    "Master of Computer Applications"
-                ]
-            },
-            "msc-programs": {
-                title: "M.Sc Programs",
-                list: [
-                    "M.Sc - Forensic Science (School of Sciences)",
-                    "M.Sc - Cyber Security & Digital Forensics (School of Sciences)",
-                    "M.Sc - Real Estate Valuation (School of Engineering)"
-                ]
-            },
-            "phd-programs": {
-                title: "Ph.D Programs",
+            "doctoral-programs": {
+                title: "Doctoral Programs",
                 list: [
                     "Ph.D in Civil Engineering",
                     "Ph.D in Electrical & Electronics Engineering",
@@ -676,31 +706,62 @@
         let generatedHtml = '';
 
         for (const [id, data] of Object.entries(programsData)) {
-            const isActive = id === 'btech-programs' ? 'active' : '';
-            let listHtml = '';
+            const isActive = id === 'engineering-programs' ? 'active' : '';
+            let contentHtml = '';
 
-            if (data.list.length > 10) {
-                const midPoint = Math.ceil(data.list.length / 2);
-                const col1 = data.list.slice(0, midPoint);
-                const col2 = data.list.slice(midPoint);
+            if (data.groups) {
+                const col1Groups = data.groups.slice(0, 1);
+                const col2Groups = data.groups.slice(1);
+                
+                contentHtml += '<div class="program-list-container">';
+                
+                // Col 1
+                contentHtml += '<div class="program-col" style="flex: 1;">';
+                col1Groups.forEach(group => {
+                    contentHtml += `<div class="program-group" style="margin-bottom: 30px;">`;
+                    contentHtml += `<h4 style="color: #1D5095; margin-bottom: 15px; margin-top: 0; font-size: 18px;">${group.title}</h4>`;
+                    contentHtml += `<ul class="program-list" style="margin-bottom: 0;">`;
+                    group.list.forEach(item => contentHtml += `<li>${item}</li>`);
+                    contentHtml += `</ul></div>`;
+                });
+                contentHtml += '</div>';
 
-                listHtml += '<ul class="program-list">';
-                col1.forEach(item => listHtml += `<li>${item}</li>`);
-                listHtml += '</ul><ul class="program-list">';
-                col2.forEach(item => listHtml += `<li>${item}</li>`);
-                listHtml += '</ul>';
-            } else {
-                listHtml += '<ul class="program-list">';
-                data.list.forEach(item => listHtml += `<li>${item}</li>`);
-                listHtml += '</ul>';
+                // Col 2
+                contentHtml += '<div class="program-col" style="flex: 1;">';
+                col2Groups.forEach(group => {
+                    contentHtml += `<div class="program-group" style="margin-bottom: 30px;">`;
+                    contentHtml += `<h4 style="color: #1D5095; margin-bottom: 15px; margin-top: 0; font-size: 18px;">${group.title}</h4>`;
+                    contentHtml += `<ul class="program-list" style="margin-bottom: 0;">`;
+                    group.list.forEach(item => contentHtml += `<li>${item}</li>`);
+                    contentHtml += `</ul></div>`;
+                });
+                contentHtml += '</div>';
+                
+                contentHtml += '</div>';
+            } else if (data.list) {
+                let listHtml = '';
+                if (data.list.length > 10) {
+                    const midPoint = Math.ceil(data.list.length / 2);
+                    const col1 = data.list.slice(0, midPoint);
+                    const col2 = data.list.slice(midPoint);
+
+                    listHtml += '<ul class="program-list">';
+                    col1.forEach(item => listHtml += `<li>${item}</li>`);
+                    listHtml += '</ul><ul class="program-list">';
+                    col2.forEach(item => listHtml += `<li>${item}</li>`);
+                    listHtml += '</ul>';
+                } else {
+                    listHtml += '<ul class="program-list">';
+                    data.list.forEach(item => listHtml += `<li>${item}</li>`);
+                    listHtml += '</ul>';
+                }
+                contentHtml = `<div class="program-list-container">${listHtml}</div>`;
             }
 
             generatedHtml += `
                 <div id="${id}" class="program-content ${isActive}">
                     <h3 class="program-title">${data.title}</h3>
-                    <div class="program-list-container">
-                        ${listHtml}
-                    </div>
+                    ${contentHtml}
                 </div>
             `;
         }
