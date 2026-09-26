@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Admissions</title>
+    <link rel="icon" type="image/png" href="assets/Circle_logo_gold.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="top-bar"></div>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="assets/New website Logo with acc.svg" alt="Aditya University Logo" class="logo">
+            </div>
+
+            <div class="admissions-help">
+                <div class="help-title">FOR ADMISSIONS HELP</div>
+                <div class="help-contacts">
+                    <a href="tel:+917095076664" class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                            fill="#d46320">
+                            <path
+                                d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                        </svg>
+                        <span>+91 70950 76664</span>
+                    </a>
+                    <a href="mailto:info@adityauniversity.in" class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                            fill="#d46320">
+                            <path
+                                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                        </svg>
+                        <span>info@adityauniversity.in</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/Bn1.webp" alt="Banner 1"></div>
+            <div class="swiper-slide"><img src="assets/Bn2.webp" alt="Banner 2"></div>
+            <div class="swiper-slide"><img src="assets/Bn3.webp" alt="Banner 3"></div>
+        </div>
+    </div>
+
+    <!-- Info Section -->
+    <section class="info-section-wrapper">
+        <div class="info-container">
+            <div class="info-content">
+                <h2 class="info-title">Admissions Open (2026-27)</h2>
+                <p class="info-text">Our university has become a leader in engineering education, research and
+                    technology.
+                    Aditya offers a dynamic learning environment that fosters intellectual growth, creativity and the
+                    drive
+                    to address real-world challenges.</p>
+            </div>
+            <div class="info-image-container">
+                <img src="assets/S1.jpg" alt="Admissions 2026-27" class="info-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Ribbon -->
+    <div id="programs" class="nav-ribbon">
+        <div class="ribbon-container">
+            <a href="#" class="ribbon-title">Programs Offered</a>
+            <span class="ribbon-divider">|</span>
+            <nav class="ribbon-links">
+                <a href="#" class="tab-link active" data-target="btech-programs">B.Tech</a>
+                <a href="#" class="tab-link" data-target="bba-programs">BBA</a>
+                <a href="#" class="tab-link" data-target="bsc-programs">B.Sc</a>
+                <a href="#" class="tab-link" data-target="bca-programs">BCA</a>
+                <a href="#" class="tab-link" data-target="pharmacy-programs">Pharmacy</a>
+                <a href="#" class="tab-link" data-target="mtech-programs">M.Tech</a>
+                <a href="#" class="tab-link" data-target="mba-programs">MBA</a>
+                <a href="#" class="tab-link" data-target="mca-programs">MCA</a>
+                <a href="#" class="tab-link" data-target="msc-programs">M.Sc</a>
+                <a href="#" class="tab-link" data-target="phd-programs">Ph.D</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Decorative Section -->
+    <section class="decorative-section-wrapper">
+        <img src="assets/Circle _White.png" alt="Decorative Circle" class="bg-circle-center">
+        <div class="decorative-container">
+            <div class="programs-card" id="programs-card-container">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Study Section -->
+    <section id="why-join" class="info-section-wrapper">
+        <div class="info-container">
+            <div class="info-image-container">
+                <img src="assets/S2.jpg" alt="Why Study at Aditya University" class="info-image">
+            </div>
+            <div class="info-content">
+                <h2 class="info-title">Why Study at Aditya University</h2>
+                <ul class="why-study-list">
+                    <li>100% Placements for all registered and eligible students.</li>
+                    <li>3000+ Placement offers from 260+ Industry-connect Companies.</li>
+                    <li>250+ Doctoral faculty in varied research domains.</li>
+                    <li>3000+ Paper Publications in SCI/SCOPUS indexed Journals.</li>
+                    <li>Govt.-funded Sponsored projects worth Rs 16.3 Crores.</li>
+                    <li>800+ Patents by faculty & students.</li>
+                    <li>500+ Faculty with rich industry, academia and research experience.</li>
+                    <li>42 Functional MoUs with various MNCs.</li>
+                    <li>Internships in globally acclaimed MNCs to hone futuristic technical skills in students.</li>
+                    <p>Foreign Language Learning via the Centre for Foreign Languages to improve International
+                        Placements.</p>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Card Section -->
+    <section id="about-aditya" class="about-card-section">
+        <div class="about-card-container">
+            <div class="about-card">
+                <h3>About Aditya University</h3>
+                <p>Aditya University is a leading institution of higher education dedicated to nurturing knowledge,
+                    innovation and excellence with a strong academic foundation and a student-centric approach, our
+                    University strives to prepare learners for global challenges.</p>
+                <p>University offers a wide spectrum of undergraduate, postgraduate and doctoral programs across diverse
+                    disciplines, designed to blend theoretical learning with practical application. Supported by
+                    experienced faculty, modern infrastructure and a vibrant campus environment, Aditya University
+                    fosters holistic development, critical thinking and research-driven learning, empowering students to
+                    achieve academic success and professional growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accreditations Section -->
+    <section class="accreditations-section">
+        <div class="accreditations-container">
+            <h2 class="accreditations-title">Ranking and Accreditations</h2>
+            <div class="swiper acc-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide acc-card">
+                        <div class="acc-top">151 - 200</div>
+                        <div class="acc-mid">University Rank Band</div>
+                        <div class="acc-bot"><img src="assets/rankings/nirf__3_.webp" alt="NIRF"></div>
+                    </div>
+                    <div class="swiper-slide acc-card">
+                        <div class="acc-top">Tier - 1</div>
+                        <div class="acc-mid">Accredited CE, EEE, ME, ECE, CSE, IT</div>
+                        <div class="acc-bot"><img src="assets/rankings/nba_aditya.webp" alt="NBA"></div>
+                    </div>
+                    <div class="swiper-slide acc-card">
+                        <div class="acc-top">Diamond</div>
+                        <div class="acc-mid">Indian University Rating</div>
+                        <div class="acc-bot"><img src="assets/rankings/qsgauge-logo.webp" alt="QS I-GAUGE"></div>
+                    </div>
+                    <div class="swiper-slide acc-card">
+                        <div class="acc-top">50<sup>th</sup> Rank</div>
+                        <div class="acc-mid">Times HigherEducation across India</div>
+                        <div class="acc-bot"><img src="assets/rankings/impact-logo.webp" alt="THE Impact Rankings 2025">
+                        </div>
+                    </div>
+                    <div class="swiper-slide acc-card">
+                        <div class="acc-top">1001-1500 Rank</div>
+                        <div class="acc-mid">Times Higher EducationAcross world wide</div>
+                        <div class="acc-bot"><img src="assets/rankings/impact-logo.webp" alt="THE Impact Rankings 2025">
+                        </div>
+                    </div>
+                    <div class="swiper-slide acc-card">
+                        <div class="acc-top">36<sup>th</sup> Rank</div>
+                        <div class="acc-mid">Technical Universities in India</div>
+                        <div class="acc-bot"><img src="assets/rankings/theweek-logo.webp" alt="THE WEEK"></div>
+                    </div>
+                    <div class="swiper-slide acc-card">
+                        <div class="acc-top">54<sup>th</sup> Rank</div>
+                        <div class="acc-mid">Among Government & PrivateInstitutions across India</div>
+                        <div class="acc-bot"><img src="assets/rankings/dataquest-logo.webp" alt="DATAQUEST"></div>
+                    </div>
+                    <div class="swiper-slide acc-card">
+                        <div class="acc-top">50<sup>th</sup> Rank</div>
+                        <div class="acc-mid">Among Private Institutions across India</div>
+                        <div class="acc-bot"><img src="assets/rankings/dataquest-logo.webp" alt="DATAQUEST"></div>
+                    </div>
+                    <div class="swiper-slide acc-card">
+                        <div class="acc-top">14<sup>th</sup> Rank</div>
+                        <div class="acc-mid">Among Private Institutions across India</div>
+                        <div class="acc-bot"><img src="assets/rankings/timeseng-logo.webp" alt="TIMES ENGINEERING">
+                        </div>
+                    </div>
+                    <div class="swiper-slide acc-card">
+                        <div class="acc-top">AAA<sup>+</sup> Rank</div>
+                        <div class="acc-mid">India's Best Engineering Colleges In South Zone</div>
+                        <div class="acc-bot"><img src="assets/rankings/careers360_1_.webp" alt="CAREERS360"></div>
+                    </div>
+                    <div class="swiper-slide acc-card">
+                        <div class="acc-top">4<sup>th</sup> Rank</div>
+                        <div class="acc-mid">Among Top 10 EngineeringColleges In South India</div>
+                        <div class="acc-bot"><img src="assets/rankings/siliconindia-logo.webp" alt="siliconindia"></div>
+                    </div>
+                    <div class="swiper-slide acc-card">
+                        <div class="acc-top">15<sup>th</sup> Rank</div>
+                        <div class="acc-mid">Among top 100Engineering colleges in India</div>
+                        <div class="acc-bot"><img src="assets/rankings/siliconindia-logo.webp" alt="siliconindia"></div>
+                    </div>
+                    <div class="swiper-slide acc-card">
+                        <div class="acc-top">27<sup>th</sup> Rank</div>
+                        <div class="acc-mid">India's Top 50 Engineering Colleges Survey</div>
+                        <div class="acc-bot"><img src="assets/rankings/theacademic-logo.webp"
+                                alt="THE ACADEMIC INSIGHTS"></div>
+                    </div>
+                    <div class="swiper-slide acc-card">
+                        <div class="acc-top">Platinum band</div>
+                        <div class="acc-mid">The Impact Rankings</div>
+                        <div class="acc-bot"><img src="assets/rankings/r-rworld-logo.webp"
+                                alt="R World Institutional RANKING"></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Placements Section -->
+    <section class="placements-section">
+        <div class="placements-container">
+            <h2 class="placements-title">Placements</h2>
+            <div class="placements-grid">
+                <!-- Card 1 -->
+                <div class="placement-card">
+                    <div class="placement-icon-container">
+                        <div class="placement-line"></div>
+                        <div class="placement-icon">
+                            <img src="assets/Group 482.png" alt="Highest Package Icon">
+                        </div>
+                    </div>
+                    <div class="placement-value">39.6 LPA</div>
+                    <div class="placement-label">Highest Package</div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="placement-card">
+                    <div class="placement-icon-container">
+                        <div class="placement-line"></div>
+                        <div class="placement-icon">
+                            <img src="assets/Group 484.png" alt="Students Placed Icon">
+                        </div>
+                    </div>
+                    <div class="placement-value">3024+</div>
+                    <div class="placement-label">Students Placed in 2025</div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="placement-card">
+                    <div class="placement-icon-container">
+                        <div class="placement-line"></div>
+                        <div class="placement-icon">
+                            <img src="assets/Group 484.png" alt="Students Placed Icon">
+                        </div>
+                    </div>
+                    <div class="placement-value">1900+</div>
+                    <div class="placement-label">Students Placed in 2026*<br><span
+                            style="font-size: 11px; font-weight: 700; color: #17579F;">Still Counting...</span></div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="placement-card">
+                    <div class="placement-icon-container">
+                        <div class="placement-line"></div>
+                        <div class="placement-icon">
+                            <img src="assets/Group 482.png" alt="Average Package Icon">
+                        </div>
+                    </div>
+                    <div class="placement-value">4.11 LPA</div>
+                    <div class="placement-label">Average Package</div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="placement-card">
+                    <div class="placement-icon-container">
+                        <div class="placement-line"></div>
+                        <div class="placement-icon">
+                            <img src="assets/Group 486.png" alt="Companies Icon">
+                        </div>
+                    </div>
+                    <div class="placement-value">260+</div>
+                    <div class="placement-label">Companies<br>(100+ International) in 2025</div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="placement-card">
+                    <div class="placement-icon-container">
+                        <div class="placement-line"></div>
+                        <div class="placement-icon">
+                            <img src="assets/Group 488.png" alt="Placement Assistance Icon">
+                        </div>
+                    </div>
+                    <div class="placement-value">100%</div>
+                    <div class="placement-label">Placement Assistance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recruiters Section -->
+    <section class="recruiters-section">
+        <div class="recruiters-container">
+            <h2 class="placements-title" style="margin-bottom: 20px;">Our Top Recruiters</h2>
+            <div class="swiper recruiter-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/hashira-logo.webp"
+                            alt="Hashira"></div>
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/hp-logo.webp" alt="HP"></div>
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/infosys-logo.webp"
+                            alt="Infosys"></div>
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/wipro-logo.webp" alt="Wipro">
+                    </div>
+
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/accenture-logo.webp"
+                            alt="Accenture"></div>
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/capgimini-logo.webp"
+                            alt="Capgemini"></div>
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/toyota-connect-logo.webp"
+                            alt="Toyota"></div>
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/walmar-logo.webp" alt="Walmart">
+                    </div>
+
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/sansyu-logo.webp" alt="Sansyu">
+                    </div>
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/adtech-logo.webp" alt="Adtech">
+                    </div>
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/ihara-logo.webp" alt="Ihara">
+                    </div>
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/daiseki-logo.webp"
+                            alt="Daiseki"></div>
+
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/jems-logo.webp" alt="Jems">
+                    </div>
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/larsen-turbo-logo.webp"
+                            alt="L&T"></div>
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/hitachi-logo.webp"
+                            alt="Hitachi"></div>
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/autodesk-logo.webp"
+                            alt="Autodesk"></div>
+
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/darwin-logo.webp"
+                            alt="Darwinbox"></div>
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/Increff-logo.webp"
+                            alt="Increff"></div>
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/zop-smart-logo.webp"
+                            alt="ZopSmart"></div>
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/i-q-information-logo.webp"
+                            alt="iQ"></div>
+
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/tcs-logo.webp" alt="TCS"></div>
+                    <div class="swiper-slide recruiter-card"><img src="assets/recruiter/aisan-logo.webp" alt="Aisan">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New White Section (Students Testimonials) -->
+    <section class="white-section" style="background-color: #ffffff; padding: 80px 20px; min-height: 400px;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="placements-title">Students Testimonials</h2>
+            <div class="testimonials-grid">
+                <!-- Card 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-top">
+                        <img class="quote-icon" src="assets/quote.png" alt="Quote">
+                        <img class="sunburst-bg" src="assets/AUS SUN GOLD.png" alt="">
+                        <div class="student-img-wrapper">
+                            <img class="student-img" src="assets/S1.jpg" alt="Student">
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <h5 class="testimonial-heading"
+                            style="margin-top: 0; margin-bottom: 10px; color: #1D5095; font-size: 16px;">My Gateway to a
+                            Successful Career</h5>
+                        <p class="testimonial-text">The greatest success for an engineering student would be to get an
+                            opportunity to kick start
+                            their career in a reputed organization with a good package. This I was able to find in
+                            Aditya which has given me the best by driving out the best from me. Aditya made me to take
+                            life seriously and challengingly in the campus. It trained me to be always in win-win
+                            situation and helped me get a job in MNC, CONTROL’s with a huge package. The vast hands-on
+                            experience and enriching helped me bag this job. Thank you Aditya for shaping me and my
+                            skills in both academic and non-academic activities.</p>
+                        <div class="testimonial-divider"></div>
+                        <div class="author-info">
+                            <h4>M Sarath Chandra</h4>
+                            <span>Computer Science and Engineering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-top">
+                        <img class="quote-icon" src="assets/quote.png" alt="Quote">
+                        <img class="sunburst-bg" src="assets/AUS SUN GOLD.png" alt="">
+                        <div class="student-img-wrapper">
+                            <img class="student-img" src="assets/S2.jpg" alt="Student">
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <h5 class="testimonial-heading"
+                            style="margin-top: 0; margin-bottom: 10px; color: #1D5095; font-size: 16px;">A Supportive
+                            Community That Nurtured My Growth</h5>
+                        <p class="testimonial-text">Life in Aditya is cozy and the warmth of the management, faculty and
+                            other staff makes me and my parents to be a part of this good college. The superiors take
+                            utmost care to hone the skills of students in all aspects. Administration is great because
+                            we have all the activities for the students. It was my immense luck and fortune to be the
+                            part of this abode of learning. It helped me to grow. The entire faculty and department
+                            leaves no stone unturned to shape one’s future.</p>
+                        <div class="testimonial-divider"></div>
+                        <div class="author-info">
+                            <h4>M Durga Prasanna</h4>
+                            <span>Electronics and Communication Engineering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-top">
+                        <img class="quote-icon" src="assets/quote.png" alt="Quote">
+                        <img class="sunburst-bg" src="assets/AUS SUN GOLD.png" alt="">
+                        <div class="student-img-wrapper">
+                            <img class="student-img" src="assets/S1.jpg" alt="Student">
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <h5 class="testimonial-heading"
+                            style="margin-top: 0; margin-bottom: 10px; color: #1D5095; font-size: 16px;">From Classroom
+                            to Real-World Impact
+                        </h5>
+                        <p class="testimonial-text">A conducive environment marked my learning at Aditya college. A fine
+                            balance of academics and co-curricular activities made me to rethink about my future
+                            fostering my ideas to reality. A great support rendered by the teaching fraternity leveraged
+                            my skills to prove my talent researching fossil fuels to bio fuels.</p>
+                        <div class="testimonial-divider"></div>
+                        <div class="author-info">
+                            <h4>M Sri Durga Kalyan</h4>
+                            <span>Petroleum Technology</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Life at Aditya University Section -->
+    <section class="life-section" style="background-color: #f8f8f8; padding: 80px 20px;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="placements-title">Life at Aditya university</h2>
+            <div class="life-grid">
+                <!-- Card 1 -->
+                <div class="life-card">
+                    <img src="assets/L1.webp" alt="Prof" class="life-card-img">
+                    <div class="life-card-content">
+                        <h4>ABHINAYA CLUB</h4>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="life-card">
+                    <img src="assets/L2.webp" alt="Prof" class="life-card-img">
+                    <div class="life-card-content">
+                        <h4>Sports in Action</h4>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="life-card">
+                    <img src="assets/L3.webp" alt="Prof" class="life-card-img">
+                    <div class="life-card-content">
+                        <h4>Inclusive Ecosystem</h4>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="life-card">
+                    <img src="assets/L4.jpg" alt="Prof" class="life-card-img">
+                    <div class="life-card-content">
+                        <h4>Spiritual Harmony</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <!-- Col 1: Copyright -->
+            <div class="footer-col copyright-col">
+                <p>&copy; Copyright 2026 - Aditya University. All Rights Reserved.</p>
+            </div>
+
+            <!-- Col 2: Quick Links -->
+            <div class="footer-col links-col">
+                <div class="quick-links">
+                    <h3>QUICK LINKS</h3>
+                    <div class="quick-links-divider"></div>
+                    <ul class="quick-links-grid">
+                        <li><a href="#about-aditya">About Aditya University</a></li>
+                        <li><a href="assets/2026-27 Fee Structure.pdf" target="_blank">Fee Structure & Scholarships</a>
+                        </li>
+                        <li><a href="#why-join">Why Join Aditya University</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Col 3: Social -->
+            <div class="footer-col social-col">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/adityauniversity/" class="social-icon fb" target="_blank"><svg
+                            viewBox="0 0 320 512">
+                            <path fill="currentColor"
+                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                        </svg></a>
+                    <a href="https://x.com/adityauniv" class="social-icon x" target="_blank"><svg viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                        </svg></a>
+                    <a href="https://www.youtube.com/@adityauniversity" class="social-icon yt" target="_blank"><svg
+                            viewBox="0 0 576 512">
+                            <path fill="currentColor"
+                                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                        </svg></a>
+                    <a href="https://www.instagram.com/aditya_university/" class="social-icon ig" target="_blank"><svg
+                            viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg></a>
+                    <a href="https://www.linkedin.com/school/adityauniversity/" class="social-icon in"
+                        target="_blank"><svg viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>Website Design and Development by<span style="color: #be9337;"> IT Application</span></p>
+        </div>
+    </footer>
+
+    <!-- Floating Brochure Button -->
+    <a href="assets/4 Pages Leaflet Design.pdf" target="_blank" download class="brochure-btn-fixed">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/>
+        </svg>
+        <span>Brochure</span>
+    </a>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const programsData = {
+            "btech-programs": {
+                title: "B.Tech Programs",
+                list: [
+                    "B.Tech. - Agricultural Engineering",
+                    "B.Tech. - Civil Engineering",
+                    "B.Tech. - Computer Science and Engineering",
+                    "B.Tech. - Artificial Intelligence & Machine Learning",
+                    "B.Tech. - Computer Science and Engineering (Data Science)",
+                    "B.Tech. - Electronics and Communication Engineering",
+                    "B.Tech. - Electrical and Electronics Engineering",
+                    "B.Tech. - Mechanical Engineering",
+                    "B.Tech. - Mining Engineering",
+                    "B.Tech. - Petroleum Technology",
+                    "B.Tech. - Computer Science and Engineering in Association with <strong>SAP</strong>",
+                    "B.Tech. - Computer Science and Engineering in Association with <strong>Google Cloud</strong>",
+                    "B.Tech. - Artificial Intelligence & Machine Learning in Association with <strong>Microsoft</strong>",
+                    "B.Tech. - Artificial Intelligence & Machine Learning in Association with <strong>Google</strong>",
+                    "B.Tech. - Computer Science and Engineering (Data Science) in Association with <strong>Google Cloud</strong>"
+                ]
+            },
+            "bba-programs": {
+                title: "BBA Programs",
+                list: [
+                    "Bachelor of Business Administration in knowledge partnership with <strong>Deloitte</strong>",
+                    "Bachelor of Business Administration (Business Analytics) in knowledge partnership with <strong>KPMG</strong>",
+                    "Bachelor of Business Administration (Global Finance) in knowledge partnership with <strong>PWC</strong>",
+                    "Bachelor of Business Administration (FinTech) in knowledge partnership with <strong>EY India</strong>",
+                    "Bachelor of Business Administration (Health Care Management) in knowledge partnership with <strong>RedVersity</strong>"
+                ]
+            },
+            "bsc-programs": {
+                title: "B.Sc Programs",
+                list: [
+                    "B.Sc - Forensic Science",
+                    "B.Sc - Cyber Security & Digital Forensics"
+                ]
+            },
+            "bca-programs": {
+                title: "BCA Programs",
+                list: [
+                    "Bachelor of Computer Applications"
+                ]
+            },
+            "pharmacy-programs": {
+                title: "Pharmacy Programs",
+                list: [
+                    "B.Pharmacy",
+                    "Pharma-D",
+                    "M.Pharmacy - Pharmaceutics",
+                    "M.Pharmacy - Pharmaceutical Analysis"
+                ]
+            },
+            "mtech-programs": {
+                title: "M.Tech Programs",
+                list: [
+                    "M.Tech. in Structural Engineering",
+                    "M.Tech. in Power Electronics and Drives",
+                    "M.Tech. in Energy Science & Technology",
+                    "M.Tech. in VLSI Design",
+                    "M.Tech. in Computer Science & Engineering",
+                    "M.Tech. in CSE (AI & ML)",
+                    "M.Tech. in Artificial Intelligence & Data Science"
+                ]
+            },
+            "mba-programs": {
+                title: "MBA Programs",
+                list: [
+                    "Master of Business Administration in knowledge partnership with <strong>Deloitte</strong>",
+                    "Master of Business Administration (Business Analytics) in knowledge partnership with <strong>KPMG</strong>",
+                    "Master of Business Administration (Global Finance) in knowledge partnership with <strong>PWC</strong>",
+                    "Master of Business Administration (FinTech) in knowledge partnership with <strong>EY India</strong>",
+                    "Master of Business Administration (Health Care Management) in knowledge partnership with <strong>RedVersity</strong>",
+                    "Master of Business Administration (For Working Professionals)"
+                ]
+            },
+            "mca-programs": {
+                title: "MCA Programs",
+                list: [
+                    "Master of Computer Applications"
+                ]
+            },
+            "msc-programs": {
+                title: "M.Sc Programs",
+                list: [
+                    "M.Sc - Forensic Science (School of Sciences)",
+                    "M.Sc - Cyber Security & Digital Forensics (School of Sciences)",
+                    "M.Sc - Real Estate Valuation (School of Engineering)"
+                ]
+            },
+            "phd-programs": {
+                title: "Ph.D Programs",
+                list: [
+                    "Ph.D in Civil Engineering",
+                    "Ph.D in Electrical & Electronics Engineering",
+                    "Ph.D in Mechanical Engineering",
+                    "Ph.D in Electronics & Communication Engineering",
+                    "Ph.D in Computer Science & Engineering",
+                    "Ph.D in Petroleum Engineering",
+                    "Ph.D in Mining Engineering",
+                    "Ph.D in Agricultural Engineering",
+                    "Ph.D in Mathematics",
+                    "Ph.D in Physics",
+                    "Ph.D in Chemistry",
+                    "Ph.D in English",
+                    "Ph.D in Management"
+                ]
+            }
+        };
+
+        const cardContainer = document.getElementById('programs-card-container');
+        let generatedHtml = '';
+
+        for (const [id, data] of Object.entries(programsData)) {
+            const isActive = id === 'btech-programs' ? 'active' : '';
+            let listHtml = '';
+
+            if (data.list.length > 10) {
+                const midPoint = Math.ceil(data.list.length / 2);
+                const col1 = data.list.slice(0, midPoint);
+                const col2 = data.list.slice(midPoint);
+
+                listHtml += '<ul class="program-list">';
+                col1.forEach(item => listHtml += `<li>${item}</li>`);
+                listHtml += '</ul><ul class="program-list">';
+                col2.forEach(item => listHtml += `<li>${item}</li>`);
+                listHtml += '</ul>';
+            } else {
+                listHtml += '<ul class="program-list">';
+                data.list.forEach(item => listHtml += `<li>${item}</li>`);
+                listHtml += '</ul>';
+            }
+
+            generatedHtml += `
+                <div id="${id}" class="program-content ${isActive}">
+                    <h3 class="program-title">${data.title}</h3>
+                    <div class="program-list-container">
+                        ${listHtml}
+                    </div>
+                </div>
+            `;
+        }
+
+        cardContainer.innerHTML = generatedHtml;
+
+        // Tab Logic
+        const tabLinks = document.querySelectorAll('.tab-link');
+        const programContents = document.querySelectorAll('.program-content');
+
+        tabLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                tabLinks.forEach(l => l.classList.remove('active'));
+                programContents.forEach(c => c.classList.remove('active'));
+
+                this.classList.add('active');
+
+                const targetId = this.getAttribute('data-target');
+                const targetContent = document.getElementById(targetId);
+                if (targetContent) {
+                    targetContent.classList.add('active');
+                }
+            });
+        });
+
+        // Smart Header
+        let lastScrollTop = 0;
+        const header = document.querySelector('.main-header');
+
+        window.addEventListener('scroll', function () {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop && currentScroll > 110) {
+                header.classList.add('header-hidden');
+            } else {
+                header.classList.remove('header-hidden');
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+        });
+
+        var accSwiper = new Swiper(".acc-swiper", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: { slidesPerView: 1, spaceBetween: 20 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 4, spaceBetween: 20 }
+            }
+        });
+
+        var recruiterSwiper = new Swiper(".recruiter-swiper", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: { slidesPerView: 2, spaceBetween: 15 },
+                768: { slidesPerView: 3, spaceBetween: 20 },
+                992: { slidesPerView: 4, spaceBetween: 20 }
+            }
+        });
+
+        // Spotlight Hover Effect for Testimonials
+        const testimonialCards = document.querySelectorAll('.testimonial-card');
+        testimonialCards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--x', `${x}px`);
+                card.style.setProperty('--y', `${y}px`);
+            });
+        });
+
+        // Spotlight Hover Effect for Life Cards
+        const lifeCards = document.querySelectorAll('.life-card');
+        lifeCards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--x', `${x}px`);
+                card.style.setProperty('--y', `${y}px`);
+            });
+        });
+    </script>
+</body>
+
+</html>
