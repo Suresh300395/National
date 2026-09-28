@@ -44,12 +44,20 @@
         </div>
     </header>
 
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="assets/Bn1.webp" alt="Banner 1"></div>
-            <div class="swiper-slide"><img src="assets/Bn2.webp" alt="Banner 2"></div>
-            <div class="swiper-slide"><img src="assets/Bn3.webp" alt="Banner 3"></div>
+    <!-- Hero Section -->
+    <div class="hero-wrapper" style="position: relative;">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/Bn1.webp" alt="Banner 1"></div>
+                <div class="swiper-slide"><img src="assets/Bn2.webp" alt="Banner 2"></div>
+                <div class="swiper-slide"><img src="assets/Bn3.webp" alt="Banner 3"></div>
+            </div>
+        </div>
+
+        <!-- NPF Widget -->
+        <div class="npf-widget-container">
+            <div class="npf_wgts" data-height="400px" data-w="0c1f75f154d4820e5f8f65e8950cdb87"></div>
         </div>
     </div>
 
@@ -862,6 +870,13 @@
                 card.style.setProperty('--y', `${y}px`);
             });
         });
+    </script>
+    <script type="text/javascript">
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://widgets.in8.nopaperforms.com/emwgts.js";
+        document.body.appendChild(s);
     </script>
 </body>
 
