@@ -133,28 +133,7 @@ body {
     width: 100%;
 }
 
-.npf-widget-container {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translateY(-50%);
-    width: 400px;
-    /* Adjust based on widget size */
-    z-index: 9999;
-    background: transparent;
-}
 
-@media (max-width: 768px) {
-    .npf-widget-container {
-        position: relative;
-        top: auto;
-        right: auto;
-        transform: none;
-        width: 100%;
-        margin: 20px auto;
-        padding: 0 15px;
-    }
-}
 
 .mySwiper {
     width: 100%;
